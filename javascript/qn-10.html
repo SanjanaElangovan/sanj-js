@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>average marks and grade</title>
+</head>
+<body>
+  <script>
+      var students = [['David', 80], ['Vinoth', 77], ['Divya', 88], ['Ishitha', 95], ['Thomas', 68]];
+      var Avg = 0;
+      var l=students.length;
+for (var i=0; i < l; i++) {
+        Avg = Avg+students[i][1];
+        var avg = (Avg/l);
+}
+document.write("Average grade: " + (Avg)/l+ " ");
+
+        if (avg < 60){
+          document.write("Grade : F");      
+          } 
+        else if (avg < 70) {
+                document.write("Grade : D"); 
+                  } 
+        else if (avg < 80) 
+             {
+                document.write("Grade : C"); 
+        } else if (avg < 90) {
+                document.write("Grade : B"); 
+        } else if (avg < 100) {
+                document.write("Grade : A"); 
+}
+  </script>
+</body>
+</html>

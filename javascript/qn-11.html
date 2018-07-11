@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>reverse and sorting</title>
+</head>
+<body>
+        Enter a text
+        <input type="text" id="myText">
+        <button onclick="myFunction()">Click to reverse and sort</button>
+    <script>
+         function myFunction(x){
+            var x=document.getElementById("myText").value;
+             document.write(x.split('').sort().join(''));
+         }
+  </script>
+</body>
+</html>

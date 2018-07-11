@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>
+            json
+        </title>
+    </head>
+    <body>
+        <p id="para">value of json property</p>
+        <script>
+            var jsonStr = '{"mike":"Book","jason":"sweater","chels":"iPad"}';
+            var obj= JSON.parse(jsonStr);
+            document.getElementById("para").innerHTML = obj.jason;
+        </script>
+    </body>
+</html>

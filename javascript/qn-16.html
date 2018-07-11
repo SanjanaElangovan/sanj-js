@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            extracting values
+        </title>
+    </head>
+    <body>
+        <button onclick="myFunc()">click to see array</button>
+        <p id=btn>Value of objects will be displayed as array
+        </p>
+        <script>
+            function myFunc(){
+            var obj = {
+                  "One":"1",
+                  "Two":"2",
+                  "Three":"3",
+                   "Four":"4"
+                }
+            var array= Object.values(obj);
+            document.getElementById("btn").innerHTML=array;
+            }
+        </script>
+    </body>
+</html>

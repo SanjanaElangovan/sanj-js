@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>
+            Duplicates
+        </title>
+    </head>
+    <body>
+        <p id="del"></p>
+        <script>
+            var arr = [23, 40, 40, 40, 32];
+
+arr = arr.filter( function( item, index, inputArray ) {
+           return inputArray.indexOf(item) == index;
+    });
+
+document.write(arr);
+        </script>
+    </body>
+</html>

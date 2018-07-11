@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+         sort string array in ascending and descending order
+        </title>
+        <body>
+                <button onclick="myFunction1()">ascending order</button>
+                <p id=bt1></p>
+                <button onclick="myFunction2()">descending order</button>
+                <p id=bt2></p>
+            <script>
+              var fruits = ["Jackfruit", "Orange", "Apple", "Pineapple"];
+document.write(fruits);
+function myFunction1() {
+    fruits.sort();
+    document.getElementById("bt1").innerHTML = fruits;
+}
+function myFunction2() {
+    fruits.reverse();
+    document.getElementById("bt2").innerHTML = fruits;
+}
+            </script>
+        </body>
+    </head>
+</html>
